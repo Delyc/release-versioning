@@ -25,5 +25,5 @@ jobs:
 
       - name: Run release
         run: npm run release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure this token is available
+        # env:
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure this token is available
