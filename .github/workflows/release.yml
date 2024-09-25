@@ -18,16 +18,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'  # Update to a stable version
+          node-version: '20.8.1'  # Update to at least version 20.8.1
 
       - name: Check Node.js version
         run: node -v
 
       - name: Install dependencies
         run: npm install
-
-      - name: List installed packages
-        run: npm list
 
       - name: Run release
         run: npm run release
