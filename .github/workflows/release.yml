@@ -24,7 +24,7 @@ jobs:
         run: node -v
 
       - name: Clear npm cache
-        run: npm cache clean --force   # Add this step to clear npm cache
+        run: npm cache clean --force
 
       - name: Install dependencies
         run: npm install
