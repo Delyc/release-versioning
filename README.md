@@ -49,3 +49,32 @@
    - **Example**: `release/v1.2.0`
    - **When to use**: When you’re preparing for a new version release of your software.
 
+
+
+
+### Dependencies
+
+`standard-version`
+Automates versioning and changelog generation based on commits.
+
+`Semantic Release` 
+an automated versioning and package publishing tool that helps streamline the release process for software projects.
+
+
+`Semantic Release` automatically determines the next version number (`major`, `minor`, or `patch`) based on the commit messages in your repository
+
+- `Major version`: Introduces breaking changes (e.g., `1.0.0` → `2.0.0`)
+- `Minor version`: Adds new features in a backwards-compatible manner (e.g., `1.0.0` → `1.1.0`)
+- `Patch version`: Bug fixes that are backwards-compatible (e.g., `1.0.0` → `1.0.1`)
+
+
+
+`semantic-release/git`
+Responsible for handling version tagging and Git-related tasks. Here are its main functionalities:
+
+`semantic-release/github`
+Responsible for automating the creation and management of GitHub releases. 
+
+`semantic-release/commit-analyzer` 
+Determines the version number for a release based on the commit messages in your repository.
+
