@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. **`feature/`**
+   - **Purpose**: Used for new features or enhancements.
+   - **Example**: `feature/user-authentication`
+   - **When to use**: When you’re adding new functionality to the codebase.
 
-Currently, two official plugins are available:
+### 2. **`bugfix/`**
+   - **Purpose**: For branches that contain fixes for bugs or issues.
+   - **Example**: `bugfix/fix-login-error`
+   - **When to use**: When you're resolving a bug or error in the code.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 3. **`hotfix/`**
+   - **Purpose**: For urgent fixes that need to be made to the production environment.
+   - **Example**: `hotfix/critical-security-patch`
+   - **When to use**: For critical changes that need to be addressed immediately in production.
 
-## Expanding the ESLint configuration
+### 4. **`chore/`**
+   - **Purpose**: For routine tasks or maintenance that don't change functionality.
+   - **Example**: `chore/update-dependencies`
+   - **When to use**: For tasks like updating dependencies, cleaning up code, or updating configurations.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 5. **`refactor/`**
+   - **Purpose**: For code refactoring without changing the external behavior or adding new features.
+   - **Example**: `refactor/optimize-search-algorithm`
+   - **When to use**: When you’re improving code structure, readability, or performance without adding features or fixing bugs.
 
-- Configure the top-level `parserOptions` property like this:
+### 6. **`test/`**
+   - **Purpose**: For branches that add or modify tests.
+   - **Example**: `test/add-integration-tests`
+   - **When to use**: When writing new tests or improving existing test coverage.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 7. **`docs/`**
+   - **Purpose**: For documentation changes.
+   - **Example**: `docs/update-readme`
+   - **When to use**: When adding or updating documentation files.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 8. **`ci/`**
+   - **Purpose**: For changes related to Continuous Integration/Continuous Deployment (CI/CD) configuration.
+   - **Example**: `ci/update-github-actions`
+   - **When to use**: When updating or adding CI/CD configuration files or scripts.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 9. **`revert/`**
+   - **Purpose**: For branches that revert previous changes.
+   - **Example**: `revert/revert-bugfix-login-error`
+   - **When to use**: When you need to undo a previous commit or merge.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 10. **`release/`**
+   - **Purpose**: For preparing a release version.
+   - **Example**: `release/v1.2.0`
+   - **When to use**: When you’re preparing for a new version release of your software.
+

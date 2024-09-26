@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  contents: write  # Allow Actions to push to the repository
+  contents: write  
 
 jobs:
   release:
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.8.1'  # Update to at least version 20.8.1
+          node-version: '20.8.1'  
 
       - name: Check Node.js version
         run: node -v
@@ -32,4 +32,4 @@ jobs:
       - name: Run release
         run: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}  # Ensure this token is available
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }} 
