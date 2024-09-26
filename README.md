@@ -76,5 +76,5 @@ Responsible for handling version tagging and Git-related tasks. Here are its mai
 Responsible for automating the creation and management of GitHub releases. 
 
 `semantic-release/commit-analyzer` 
-Determines the version number for a release based on the commit messages in your repository.
+Determines the version number for a release based on the commit messages in your repository
 
